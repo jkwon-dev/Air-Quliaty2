@@ -10,7 +10,7 @@ import CoreLocation
 
 class AirManager {
     
-    private let apiKey = "4f1766f9-0af0-4b76-b4cb-a6cf4e854da0"
+    private let apiKey = ""
     
     func getCurrentAirQuality(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws  -> ResponseBody {
         guard let url = URL(string: "https://api.airvisual.com/v2/nearest_city?lat=\(latitude)&lon=\(longitude)&key=\(apiKey)")
